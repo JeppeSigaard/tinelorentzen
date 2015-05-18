@@ -1,0 +1,54 @@
+.single-content{
+
+    padding:0px 0px 100px;
+    max-width:960px;
+    margin:0px auto;
+    overflow: auto;
+
+    main{
+        padding:0px 15px;
+        max-width:640px;
+        margin:0px auto;
+        @media only screen and(min-width:960px){
+            float:right;
+            vertical-align: top;
+        }
+
+        h1{
+            display: block;
+            line-height: 55px;
+            height:55px;
+            margin-bottom:10px;
+            font-size:130%;
+            padding:0px 20px;
+        }
+
+        .wp-post-image{
+            margin-bottom: 10px;
+        }
+
+    }
+
+    aside{
+        padding:0px 15px;
+        max-width:640px;
+        margin:0px auto;
+
+        @media only screen and(min-width:960px){
+            float:left;
+            width:320px;
+            vertical-align: top;
+        }
+
+        .related a{
+            overflow:hidden;
+            display: block;
+            height:55px;
+            line-height: 55px;
+            margin-bottom:2px;
+            padding:0px 20px;
+
+        }
+    }
+}
+

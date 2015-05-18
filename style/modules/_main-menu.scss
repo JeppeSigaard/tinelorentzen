@@ -1,0 +1,45 @@
+#main-menu{
+    position: fixed;
+    background: white;
+    right: -$main-menu-width;
+    top: 0;
+    width: $main-menu-width;
+    height: 100%;
+    z-index:1;
+    overflow-y: scroll;
+    transition:right $main-menu-transition;
+    box-shadow:2px -5px 5px 0px rgba(0,0,0,.2) inset;
+
+    a{
+        display: block;
+        margin:0px 3px 2px;
+        padding:0px 20px;
+        height:48px;
+        line-height: 48px;
+        background:$contrast-color-1;
+        color:white;
+        position: relative;
+        animation: colortrans linear infinite 50s;
+
+        &:after{
+            content:'';
+            position: absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            background: transparent;
+            transition: background .2s;
+        }
+
+        &:hover:after{
+            background:rgba(white,.2);
+        }
+
+    }
+}
+
+.menu-out #main-menu{
+    right:0;
+}
+

@@ -1,0 +1,36 @@
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 2px;
+    height: 4px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+    transform-origin: center;
+    perspective: 500px;
+}
+.nav-toggle span:before {
+  top: -10px;
+}
+.nav-toggle span:after {
+  bottom: -10px;
+}
+
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+  transition: transform $main-menu-transition ease-out;
+}
+
+.nav-toggle.active span{
+  transform:rotate(-180deg);
+}
+
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+  top: 0;
+}
+.nav-toggle.active span:before {
+  transform: rotate(213deg)translate(5px,-9px)rotateY(60deg);
+}
+.nav-toggle.active span:after {
+  transform: rotate(-213deg)translate(5px,9px)rotateY(60deg);
+}

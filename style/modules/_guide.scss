@@ -1,0 +1,46 @@
+.guide{
+    //@extend .full-height;
+    background:white;
+    position:relative;
+    overflow: hidden;
+
+    article{
+        width:100%;
+        color:$contrast-color-1;
+        /*
+        &:nth-of-type(2) .inner{
+                background: $contrast-color-1;
+                color:white;
+            }
+        */
+        .inner{
+            display: block;
+            margin:20px;
+            padding:20px;
+
+             h3{
+                margin-top:70px;
+                text-align: center;
+                font-size: 200%;
+                font-weight: bold;
+            }
+
+            >div{
+                max-width:540px;
+                margin: 20px auto 40px;
+                line-height: 1.6;
+                text-align: justify;
+            }
+        }
+    }
+
+    .flickity-page-dots{
+        top:50px;
+        height:15px;
+
+        .dot{
+            height:15px;
+            width:15px;
+        }
+    }
+}

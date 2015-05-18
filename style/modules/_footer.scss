@@ -1,0 +1,52 @@
+footer{
+    @extend .hero;
+    height:400px;
+    min-height: 0px;
+    background:$contrast-color-1;
+    backface-visibility: hidden;
+    animation: colortrans linear infinite 50s;
+
+    .logo{
+        box-shadow: none;
+        width:100px;
+        height:100px;
+
+        svg{
+            fill:white;
+        }
+    }
+
+    h4,h5{
+        text-shadow: none;
+        font-size:18.5px;
+        width:155px;
+    }
+
+    h5{
+        font-size:12px;
+        letter-spacing: 7px;
+    }
+
+    nav a{
+        width:50px;
+        height:50px;
+        background-size: 25px;
+        box-sizing: border-box;
+    }
+
+    span{
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        margin:30px 0px 0px;
+
+        a, a:hover{
+            display: block;
+            color:white;
+            font-weight:100;
+            margin:10px 0px;
+            font-size:12px;
+        }
+    }
+
+}
