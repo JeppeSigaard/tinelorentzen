@@ -1,5 +1,16 @@
 $(function(){
 
+    if($('.hero').length){
+    //var myScroll = new IScroll('body');
+
+        $('body').stellar({
+            horizontalScrolling: false,
+            verticalOffset:70,
+            responsive: true,
+            hideDistantElements: true,
+            scrollProperty: 'scroll',
+        });
+
     var pageHeight = $(window).height();
     $('.hero').css('height',pageHeight);
 
@@ -9,7 +20,7 @@ $(function(){
 
         var winHeight = $(window).scrollTop();
 
-        $('.bg-image').css('top', winHeight / 1.2);
+        //$('.bg-image').css('top', winHeight / 1.2);
         $('.hero>div').css('margin-top', winHeight / 2);
 
     }).on('resize',function(){
@@ -19,5 +30,5 @@ $(function(){
     });
 
     }
-
+    }
 });

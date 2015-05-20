@@ -3,7 +3,7 @@ $bgimage = '';
 $options = get_option( 'bgimage_settings' );
 $bgurl = $options['bgimage_text_field_0'];
 if($bgurl){
-    $bgimage = '<aside class="bg-image" style="background-image:url('.$bgurl.');"></aside>';
+    $bgimage = '<aside class="bg-image" data-stellar-background-ratio=".2" style="background-image:url('.$bgurl.');"></aside>';
 }
 ?>
 <section class="hero">

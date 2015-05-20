@@ -1,5 +1,6 @@
 // @koala-prepend 'assets/flickity.js';
 // @koala-prepend 'assets/masonry.js';
+// @koala-prepend 'assets/stellar.js';
 
 //@koala-append 'modules/menu-btn.js';
 //@koala-append 'modules/guide.js';

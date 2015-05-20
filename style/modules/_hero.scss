@@ -23,6 +23,8 @@
         background-repeat: no-repeat;
         background-position: center center;
         position:absolute;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
         z-index:1;
         top:0;
         left:0;
