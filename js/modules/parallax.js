@@ -3,6 +3,7 @@ $(function(){
     if($('.hero').length){
     //var myScroll = new IScroll('body');
 
+        if($(window).width() > 480){
         $('body').stellar({
             horizontalScrolling: false,
             verticalOffset:70,
@@ -10,6 +11,7 @@ $(function(){
             hideDistantElements: true,
             scrollProperty: 'scroll',
         });
+        }
 
     var pageHeight = $(window).height();
     $('.hero').css('height',pageHeight);
