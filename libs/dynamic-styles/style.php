@@ -46,6 +46,8 @@ $color_array[] = $cat_color;
 .cc-<?php echo $cat_id; ?>.cc-after-border:after,
 .cc-<?php echo $cat_id; ?>.cc-before-border:before{
     box-shadow: 10px 0 0 <?php echo $cat_color; ?>,-10px 0 0 <?php echo $cat_color; ?>;
+    -webkit-box-shadow: 10px 0 0 <?php echo $cat_color; ?>,-10px 0 0 <?php echo $cat_color; ?>;
+    -moz-box-shadow: 10px 0 0 <?php echo $cat_color; ?>,-10px 0 0 <?php echo $cat_color; ?>;
 }
 
 <?php endforeach;
@@ -57,6 +59,13 @@ $i = 0;
 
 @keyframes colortrans{
 <?php foreach ($color_array as $color) : ?>
+    <?php echo $color_percent * $i; ?>%{background-color:<?php echo $color; ?>;}
+<?php $i ++; endforeach; ?>
+}
+
+
+@keyframes colortrans{
+<?php $i = 0; foreach ($color_array as $color) : ?>
     <?php echo $color_percent * $i; ?>%{background-color:<?php echo $color; ?>;}
 <?php $i ++; endforeach; ?>
 }
