@@ -17,5 +17,6 @@ $config = array(
 
 $smamo_cat_meta =  new Tax_Meta_Class($config);
 $smamo_cat_meta->addColor('cat_color',array('name'=> __('Vælg farve','tax-meta')));
+$smamo_cat_meta->addCheckbox('cat_comments',array('name'=> __('Aktiver Facebook kommentarer for kategori','tax-meta')));
 
 $smamo_cat_meta->Finish();

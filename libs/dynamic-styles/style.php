@@ -13,7 +13,6 @@ $cat_color = '#9e6079';
 $cats = get_terms(array('category'));
 
 $color_array = array();
-$color_array[] = $cat_color;
 
 foreach($cats as $cat) : 
 

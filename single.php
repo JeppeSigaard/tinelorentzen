@@ -11,6 +11,7 @@
             <?php if(has_post_thumbnail()) : the_post_thumbnail('full'); endif; ?>
             <?php the_content(); ?>
         </article>
+        <?php get_template_part('libs/modules/single-fb','comments'); ?>
     </main>
     <?php endwhile; ?>
     <aside class="cc-<?php echo $cat_id ?>">
