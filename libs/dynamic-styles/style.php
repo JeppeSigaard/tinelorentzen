@@ -64,7 +64,7 @@ $i = 0;
 }
 
 
-@keyframes colortrans{
+@-webkit-keyframes colortrans{
 <?php $i = 0; foreach ($color_array as $color) : ?>
     <?php echo $color_percent * $i; ?>%{background-color:<?php echo $color; ?>;}
 <?php $i ++; endforeach; ?>
