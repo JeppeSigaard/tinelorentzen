@@ -13,5 +13,6 @@ require 'functions/bgimage.php';
 require 'functions/menu.php';
 
 require 'functions/ct_settings.php';
+require 'functions/tax-meta.php';
 
 ?>

@@ -1,26 +1,9 @@
-.catpaint{
+.cc-bg{
     color:white;
-}
-
-.cat-2 .catpaint,
-.cat-2.catpaint{
-    background: $contrast-color-1;
-    color:white;
-}
-.cat-3 .catpaint,
-.cat-3.catpaint{
-    background: $contrast-color-2;
-    color:white;
-}
-.cat-4 .catpaint,
-.cat-4.catpaint{
-    background: $contrast-color-3;
-    color:white;
-}
-.cat-5 .catpaint,
-.cat-5.catpaint{
-    background: $contrast-color-4;
-    color:white;
+    
+    &:hover{
+        opacity:.9;
+    }
 }
 
 
