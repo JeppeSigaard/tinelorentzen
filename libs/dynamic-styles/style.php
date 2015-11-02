@@ -53,13 +53,15 @@ $color_array[] = $cat_color;
 
 $color_array_length = count($color_array);
 $color_percent = 100 / $color_array_length;
+$return_color = '';
 $i = 0;
 ?>
 
 @keyframes colortrans{
-<?php foreach ($color_array as $color) : ?>
+<?php foreach ($color_array as $color) : if ($i === 0) {$return_color = $color;} ?>
     <?php echo $color_percent * $i; ?>%{background-color:<?php echo $color; ?>;}
 <?php $i ++; endforeach; ?>
+    100%{background-color: <?php echo $return_color; ?>;}
 }
 
 
@@ -67,4 +69,5 @@ $i = 0;
 <?php $i = 0; foreach ($color_array as $color) : ?>
     <?php echo $color_percent * $i; ?>%{background-color:<?php echo $color; ?>;}
 <?php $i ++; endforeach; ?>
+    100%{background-color: <?php echo $return_color; ?>;}
 }

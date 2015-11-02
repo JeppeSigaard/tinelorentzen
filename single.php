@@ -8,7 +8,7 @@
     <main class="cc-<?php echo $cat_id ?>">
        <article>
             <h1 class="cc-bg"><?php the_title(); ?></h1>
-            <?php if(has_post_thumbnail()) : the_post_thumbnail('full'); endif; ?>
+            <?php if(has_post_thumbnail()) : the_post_thumbnail('post-thumbnail-single'); endif; ?>
             <?php the_content(); ?>
         </article>
         <?php get_template_part('libs/modules/single-fb','comments'); ?>

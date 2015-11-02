@@ -52,7 +52,7 @@
             <?php include 'libs/img/tine-logo.svg'; ?>
         </a>
     </div>
-    <a class="month" href="<?php echo get_month_link( '', '' ); ?>"><?php echo date_i18n('F');?></a>
+    <span class="month"><?php echo date_i18n('F');?></span>
     <div class="nav-toggle"><span></span></div>
 </header>
 <nav id="main-menu">
