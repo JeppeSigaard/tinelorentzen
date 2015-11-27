@@ -75,3 +75,21 @@ $i = 0;
 <?php $i ++; endforeach; ?>
     100%{background-color: <?php echo $return_color; ?>;}
 }
+
+
+
+
+@keyframes border-colortrans{
+<?php foreach ($color_array as $color) : if ($i === 0) {$return_color = $color;} ?>
+    <?php echo $color_percent * $i; ?>%{border-color:<?php echo $color; ?>;}
+<?php $i ++; endforeach; ?>
+    100%{border-color: <?php echo $return_color; ?>;}
+}
+
+
+@-webkit-keyframes border-colortrans{
+<?php $i = 0; foreach ($color_array as $color) : ?>
+    <?php echo $color_percent * $i; ?>%{border-color:<?php echo $color; ?>;}
+<?php $i ++; endforeach; ?>
+    100%{border-color: <?php echo $return_color; ?>;}
+}

@@ -2,6 +2,11 @@
     color: #666;
     fill: #666;
     padding:40px 10px 80px;
+    @media only screen and(min-width:1400px){
+        padding:40px 20px 80px;
+        
+    }
+    
     max-width:240px;
     text-transform: uppercase;
     

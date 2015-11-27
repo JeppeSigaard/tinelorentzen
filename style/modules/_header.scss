@@ -8,7 +8,7 @@
 }
 header{
     position:fixed;
-    z-index:2;
+    z-index:200;
     top:0;
     left:0;
     right: 0;
@@ -57,15 +57,21 @@ header{
         cursor: pointer;
         box-sizing: content-box;
         width: 35px;
-        height: 25px;
+        height: 20px;
         padding: 15px 20px;
         text-align:center;
         position: relative;
         border-left: 2px solid white;
 
         span{
-            margin-top:9px;
+            margin-top:8px;
         }
+        
+        @media only screen and(min-width:960px){
+            
+            display: none;
+        }
+        
     }
 }
 

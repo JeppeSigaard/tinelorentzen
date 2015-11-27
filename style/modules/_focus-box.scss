@@ -1,0 +1,38 @@
+.focus-box{
+    border-style:solid;
+    border-width:10px;
+    display: block;
+    height:0;
+    padding-top:50%;
+    position:relative;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    
+    .inner{
+        @include center(true,true);
+        text-transform: uppercase;
+        text-align: center;
+        min-width:280px;
+        @media only screen and(min-width:480px){
+            min-width:360px;
+        }
+        
+        @media only screen and(min-width:640px){
+            min-width:480px;
+        }
+        
+    }
+    
+    h3,span{
+        display: block;
+        padding: 20px 20px 5px;
+        font-weight: bold;
+        font-size:160%;
+    }
+    span{
+        font-size: inherit;
+        font-weight: normal;
+        padding: 5px 20px 20px;
+    }
+}
