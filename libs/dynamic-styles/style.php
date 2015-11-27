@@ -10,8 +10,7 @@ require '../../../../../wp-load.php';
 
 $cat_color = '#9e6079';
 
-$cats = get_terms(array('category'));
-
+$cats = get_terms( array('category'), array('hide_empty' => false));
 $color_array = array();
 
 foreach($cats as $cat) : 
@@ -47,6 +46,11 @@ $color_array[] = $cat_color;
     box-shadow: 10px 0 0 <?php echo $cat_color; ?>,-10px 0 0 <?php echo $cat_color; ?>;
     -webkit-box-shadow: 10px 0 0 <?php echo $cat_color; ?>,-10px 0 0 <?php echo $cat_color; ?>;
     -moz-box-shadow: 10px 0 0 <?php echo $cat_color; ?>,-10px 0 0 <?php echo $cat_color; ?>;
+}
+
+.cc-<?php echo $cat_id; ?> .cc-border-color,
+.cc-<?php echo $cat_id; ?>.cc-border-color{
+    border-color: <?php echo $cat_color; ?>;
 }
 
 <?php endforeach;

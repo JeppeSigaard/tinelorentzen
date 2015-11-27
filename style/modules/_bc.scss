@@ -1,0 +1,29 @@
+.site-nav-bc{
+    color: #666;
+    fill: #666;
+    padding:40px 10px 80px;
+    max-width:240px;
+    text-transform: uppercase;
+    
+    .tine-logo{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .tine-navn{
+        margin-bottom: 30px;
+    }
+    
+    span a{
+        display: block;
+        padding:10px 0px;
+    }
+    
+    nav a{
+        display: block;
+        padding:10px 0px;
+        font-size:80%;
+    }
+}

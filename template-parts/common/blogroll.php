@@ -1,6 +1,4 @@
-
 <section class="blogroll" id="seneste-nyt">
-    <?php include get_template_directory().'/libs/modules/cat-nav.php';?>
     <?php if(have_posts()) : ?>
    <main>
        <?php while(have_posts()) : the_post(); ?>

@@ -27,7 +27,11 @@ body{
     transition:margin-left $main-menu-transition;
 }
 body.menu-out{
-    margin-left:-$main-menu-width;
+   
+    @media only screen and(max-width:960px){
+        margin-left:-$main-menu-width;
+    
+    }  
 }
 
 img{
@@ -49,3 +53,8 @@ p{
 strong{
     font-weight:bold;
 }
+
+.page-wrap{
+    position: relative;
+}
+

@@ -1,9 +1,3 @@
-<?php
-
-
-?>
-   
-
 <section class="front-links">
     <div style="background-image:url(<?php echo get_template_directory_uri() ?>/libs/img/privat.jpg);">
         <a href="<?php bloginfo('url') ?>/privat"><span>Privat</span></a>

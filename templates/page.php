@@ -1,4 +1,3 @@
-<?php get_header(); ?>
 <section class="page-content">
     <?php while(have_posts()) : the_post();?>
     <article>
@@ -11,4 +10,3 @@
 
     </aside>
 </section>
-<?php get_footer(); ?>
