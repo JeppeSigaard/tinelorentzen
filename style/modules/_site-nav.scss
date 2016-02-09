@@ -27,7 +27,11 @@
     z-index:1;
     transition:right $main-menu-transition;
     
-    ul a{
+    li:not(.cc-bg) a{
+        animation: colortrans linear infinite 50s;
+    }
+    
+    li a{
         display: block;
         margin:0px 0px 5px;
         padding:0px 20px;
@@ -37,8 +41,9 @@
         color:white;
         font-weight:bold;
         position: relative;
-        animation: colortrans linear infinite 50s;
-
+       
+    
+        
         &:after{
             content:'';
             position: absolute;

@@ -1,0 +1,20 @@
+.kursus-disclaimer{
+    font-size: 110%;
+    padding:10px 0px;
+    margin:20px;
+    border:solid #333;
+    border-width:1px 0px;
+    text-align: center;
+    font-weight: bold;
+
+    span{
+        display: block;
+        padding:20px;
+    }
+    
+    .contrast{
+        text-transform: uppercase;
+        font-weight:normal;
+    }
+    
+}
